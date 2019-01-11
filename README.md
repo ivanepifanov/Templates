@@ -1,5 +1,4 @@
-# Templates
-Templates for MVP
+# Templates for MVP
 
 Copy files to:
 ⁨Users⁩ ▸ ⁨{user}⁩ ▸ ⁨Library⁩ ▸ ⁨Developer⁩ ▸ ⁨Xcode⁩ ▸ ⁨Templates⁩ ▸ {folder_name}
