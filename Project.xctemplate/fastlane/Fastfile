@@ -1,0 +1,12 @@
+import_from_git url: "git@gitlab.isdev.info:ios-team/fastlane.git"
+
+platform :ios do
+
+  lane :build do |options|
+    options[:scheme] ||= "___PACKAGENAME___"
+    options[:configuration] ||= "Release"
+    options[:xcargs] = "SERVER_HOST=\"#{ENV['SERVER_HOST']}\""
+    import_all_provisions
+    is_enterprise options
+  end
+end

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module name:</string>
+			<key>Description</key>
+			<string>Name of module</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyModule</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>baseView</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Base View:</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Values</key>
+			<array>
+				<string>UIViewController</string>
+				<string>UINavigationController</string>
+				<string>UITabBarController</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>baseRouter</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Base Router:</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string></string>
+			<key>Values</key>
+			<array>
+				<string>BaseRouter</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>basePresentation</string>
+			<key>Required</key>
+			<false/>
+			<key>Name</key>
+			<string>Base Presentation:</string>
+			<key>Type</key>
+			<string>class</string>
+			<key>Default</key>
+			<string></string>
+			<key>Values</key>
+			<array>
+				<string>BasePresentation</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

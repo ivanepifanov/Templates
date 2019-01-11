@@ -1,0 +1,29 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target '___PACKAGENAME___' do
+    pod 'HockeySDK'
+    pod 'SwiftLint', :configuration => 'Debug'
+    pod 'R.swift', '=5.0.0.alpha.2'
+    pod 'Alamofire'
+    pod 'AlamofireNetworkActivityIndicator'
+    pod 'Moya'
+    pod 'HTTPStatusCodes'
+    pod 'PromiseKit', :subspecs => ['CorePromise']
+    pod 'KeychainAccess'
+    pod 'MulticastDelegateSwift'
+    pod 'AWSCognito'
+    pod 'AWSCognitoAuth'
+    pod 'AWSCognitoIdentityProvider'
+    pod 'AWSCognitoIdentityProviderASF'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+end
