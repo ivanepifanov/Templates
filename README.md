@@ -1,4 +1,4 @@
-# Templates for MVP
+# Xcode Swift Templates for MVP
 
 Copy files to:
 ⁨Users⁩ ▸ ⁨{user}⁩ ▸ ⁨Library⁩ ▸ ⁨Developer⁩ ▸ ⁨Xcode⁩ ▸ ⁨Templates⁩ ▸ {folder_name}
